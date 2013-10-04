@@ -18,10 +18,15 @@
 {
     [super viewDidLoad];
 
+    NSLog(@"resource path=%@", NSBundle.mainBundle.resourcePath);
+    
     
     UIWebView* webView = [[UIWebView alloc] initWithFrame: self.view.frame];
 
-    NSURLRequest *localRequest  = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"]]];
+    NSURL *indexURL = [NSURL fileURLWithPath:[[[NSBundle mainBundle]  resourcePath] stringByAppendingPathComponent: @"www/index.html"]];
+    NSLog(@"indexURL: %@", indexURL);
+    
+    NSURLRequest *localRequest  = [NSURLRequest requestWithURL: indexURL];
 
     [webView loadRequest: localRequest];
     
