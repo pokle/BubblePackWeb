@@ -17,7 +17,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    
+    UIWebView* webView = [[UIWebView alloc] initWithFrame: self.view.frame];
+
+    NSURLRequest* urlRequest = [NSURLRequest requestWithURL: [NSURL URLWithString: @"http://google.com/" ]];
+    [webView loadRequest: urlRequest];
+    
+    [self.view addSubview: webView];
+    
 }
 
 - (void)didReceiveMemoryWarning
