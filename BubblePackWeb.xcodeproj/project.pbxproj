@@ -22,6 +22,7 @@
 		785E42A217FED4F400CFD0A3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785E428117FED4F400CFD0A3 /* UIKit.framework */; };
 		785E42AA17FED4F400CFD0A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 785E42A817FED4F400CFD0A3 /* InfoPlist.strings */; };
 		785E42AC17FED4F400CFD0A3 /* BubblePackWebTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 785E42AB17FED4F400CFD0A3 /* BubblePackWebTests.m */; };
+		785E42B617FED7E500CFD0A3 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 785E42B517FED7E500CFD0A3 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		785E42A717FED4F400CFD0A3 /* BubblePackWebTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BubblePackWebTests-Info.plist"; sourceTree = "<group>"; };
 		785E42A917FED4F400CFD0A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		785E42AB17FED4F400CFD0A3 /* BubblePackWebTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BubblePackWebTests.m; sourceTree = "<group>"; };
+		785E42B517FED7E500CFD0A3 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				785E428617FED4F400CFD0A3 /* InfoPlist.strings */,
 				785E428917FED4F400CFD0A3 /* main.m */,
 				785E428B17FED4F400CFD0A3 /* BubblePackWeb-Prefix.pch */,
+				785E42B517FED7E500CFD0A3 /* index.html */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785E42B617FED7E500CFD0A3 /* index.html in Resources */,
 				785E429417FED4F400CFD0A3 /* Main_iPad.storyboard in Resources */,
 				785E429917FED4F400CFD0A3 /* Images.xcassets in Resources */,
 				785E429117FED4F400CFD0A3 /* Main_iPhone.storyboard in Resources */,

@@ -21,8 +21,9 @@
     
     UIWebView* webView = [[UIWebView alloc] initWithFrame: self.view.frame];
 
-    NSURLRequest* urlRequest = [NSURLRequest requestWithURL: [NSURL URLWithString: @"http://google.com/" ]];
-    [webView loadRequest: urlRequest];
+    NSURLRequest *localRequest  = [NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"index" ofType:@"html"]]];
+
+    [webView loadRequest: localRequest];
     
     [self.view addSubview: webView];
     
