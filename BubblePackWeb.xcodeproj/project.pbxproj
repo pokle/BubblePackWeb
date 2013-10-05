@@ -23,8 +23,6 @@
 		785E42AA17FED4F400CFD0A3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 785E42A817FED4F400CFD0A3 /* InfoPlist.strings */; };
 		785E42AC17FED4F400CFD0A3 /* BubblePackWebTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 785E42AB17FED4F400CFD0A3 /* BubblePackWebTests.m */; };
 		786CD06017FEE5D300E2A00E /* www in Resources */ = {isa = PBXBuildFile; fileRef = 786CD05F17FEE5D300E2A00E /* www */; };
-		786CD06217FEE8E200E2A00E /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786CD06117FEE8E200E2A00E /* Images-2.xcassets */; };
-		786CD06417FEE9A500E2A00E /* Images-3.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786CD06317FEE9A500E2A00E /* Images-3.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,8 +57,6 @@
 		785E42A917FED4F400CFD0A3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		785E42AB17FED4F400CFD0A3 /* BubblePackWebTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BubblePackWebTests.m; sourceTree = "<group>"; };
 		786CD05F17FEE5D300E2A00E /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
-		786CD06117FEE8E200E2A00E /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
-		786CD06317FEE9A500E2A00E /* Images-3.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-3.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +124,6 @@
 				785E429517FED4F400CFD0A3 /* BPWViewController.h */,
 				785E429617FED4F400CFD0A3 /* BPWViewController.m */,
 				785E429817FED4F400CFD0A3 /* Images.xcassets */,
-				786CD06117FEE8E200E2A00E /* Images-2.xcassets */,
-				786CD06317FEE9A500E2A00E /* Images-3.xcassets */,
 				785E428417FED4F400CFD0A3 /* Supporting Files */,
 			);
 			path = BubblePackWeb;
@@ -241,8 +235,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				786CD06217FEE8E200E2A00E /* Images-2.xcassets in Resources */,
-				786CD06417FEE9A500E2A00E /* Images-3.xcassets in Resources */,
 				785E429417FED4F400CFD0A3 /* Main_iPad.storyboard in Resources */,
 				785E429917FED4F400CFD0A3 /* Images.xcassets in Resources */,
 				785E429117FED4F400CFD0A3 /* Main_iPhone.storyboard in Resources */,
@@ -409,6 +401,7 @@
 				GCC_PREFIX_HEADER = "BubblePackWeb/BubblePackWeb-Prefix.pch";
 				INFOPLIST_FILE = "BubblePackWeb/BubblePackWeb-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -422,6 +415,7 @@
 				GCC_PREFIX_HEADER = "BubblePackWeb/BubblePackWeb-Prefix.pch";
 				INFOPLIST_FILE = "BubblePackWeb/BubblePackWeb-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
