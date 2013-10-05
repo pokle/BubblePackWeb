@@ -23,11 +23,11 @@
     
     UIWebView* webView = [[UIWebView alloc] initWithFrame: self.view.frame];
 
+    webView.delegate = self;
+    
     NSURL *indexURL = [NSURL fileURLWithPath:[[[NSBundle mainBundle]  resourcePath] stringByAppendingPathComponent: @"www/index.html"]];
     NSLog(@"indexURL: %@", indexURL);
-    
     NSURLRequest *localRequest  = [NSURLRequest requestWithURL: indexURL];
-
     [webView loadRequest: localRequest];
     
     [self.view addSubview: webView];
@@ -39,5 +39,22 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark UIWebDelegate implementation
+
+
+- (BOOL) webView:(UIWebView*)theWebView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    NSURL *url = [request URL];
+    
+    if ([[url scheme] isEqualToString: @"file"]) {
+        return YES;
+    } else {
+        [[UIApplication sharedApplication] openURL:url];
+        return NO;
+    }
+}
+
+#pragma end
 
 @end
